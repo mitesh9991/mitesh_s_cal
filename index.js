@@ -13,7 +13,7 @@ app.use(express.static('views'));
 
 
 
-    app.get("/signup", function (req, res) {
+    app.get("/", function (req, res) {
         res.sendFile(__dirname + "/views/signup.html");
     });
 
@@ -47,7 +47,7 @@ app.post('/signup', function (req, res) {
 });
 
 app.post("/failure",function(req,res){
-    res.redirect("/signup")
+    res.redirect("/")
 });
 
 
